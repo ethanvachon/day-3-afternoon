@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>day-3-afternoon</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand bg-danger text-light">
+            <a class="navbar-brand d-flex align-items-center pl-5" href="#">
+                <img src="assets\pokeball.png" width="80" height="80" alt="" loading="lazy">
+                <span class="ml-2 display-4">Pokemon Collector</span>
+            </a>
+        </nav>
+    </header>
+    <main class="container-fluid">
+
+        <div class="row h-25">
+            <div class="col-12">
+                <h2>All Pokemon:</h2>
+                <div class="">
+                    <ul id="api-pokemon" class="api-container">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row h-26 bg-danger text-light">
+            <div class="col-12">
+                <h2>Selected:</h2>
+                <div id="selected-pokemon" class="text-light">
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row h-25">
+            <div class="col-12">
+                <h2>Your Pokemon:</h2>
+                <div id="my-pokemon">
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous"></script>
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
