@@ -23,7 +23,7 @@ export default class Pokemon {
     return ''
   }
   get Button() {
-    if (this.id) {
+    if (!this.id.length) {
       return `<button class="btn btn-outline-success" onclick="app.myPokemonController.addPokemon()">Add Pokemon</button>`
     }
     return `<button class="btn btn-outline-warning" onclick="app.myPokemonController.removePokemon()">Remove Pokemon</button>`
