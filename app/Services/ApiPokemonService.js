@@ -10,7 +10,9 @@ class ApiPokemonService {
   }
   async getPokemon(index) {
     let res = await pokeApi.get(index)
-    ProxyState.selected = new Pokemon({ name: index, img: res.data.sprites.front_default, height: res.data.height, weight: res.data.weight, types: res.data.types })
+    ProxyState.selected = new Pokemon({ name: index, img: res.data.sprites.front_default, height: res.data.height, weight: res.data.weight, types: res.data.types, id: res.data.id })
+    console.log(res.data)
+    console.log(ProxyState.selected)
   }
 }
 
